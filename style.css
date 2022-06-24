@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #aa53af;
+    position:relative;
+    width: 100vw;
+    height: 100vh;
+}
+.container{
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    right: 0;
+    left: 0;
+    position: absolute;
+    top: 50px;
+    padding: 20px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+.title {
+    width: 100%;
+    background-color: #eee;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+    padding: 10px 20px;
+}
+label {
+    margin-bottom:10px ;
+    font-size: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+input {
+    height: 35px;
+    outline: none;
+}
+button {
+    background-color: #aa53af;
+    height: 40px;
+    color: #eee;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.valid {
+    border: 3px solid rgb(105, 224, 105);
+}
+.invalid {
+    border: 3px solid rgb(237, 59, 59);
+}
+
+.validUser {
+    color:rgb(105, 224, 105) ;
+}
+.invalidUser {
+    color: rgb(237, 59, 59);
+}
+
+.olhoShowPassword,
+.olhoShowPasswordCheck{
+    height: 20px;
+    width: 20px;
+    color: black;
+    position: absolute;
+    right: 10px;
+    top: 46px;
+}
+.inputPassword,
+.inputUsername,
+.inputEmail{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#password ,
+#passawordCheck{
+    width: 100%;
+}
+.divInputpassword{
+    width: 100%;
+}
+@media(width: 320px) {
+    .container {
+        width: 320px;
+    }
+}
